@@ -15,4 +15,10 @@ public class HelloWorldController {
         String message = "Hello World 222!";
         return new ResponseEntity<>(message, HttpStatus.OK);
     }
+
+    @GetMapping("/greet")
+    public ResponseEntity<String> greet() {
+        String message = "Greetings from JMAS 5!";
+        return new ResponseEntity<>(message, HttpStatus.OK);
+    }
 }
